@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       i = 0;
     }
     showImage(i);
-  }, 5000);
+  }, 20000);
   showImage(i);
 });
 
