@@ -17,12 +17,11 @@ end
 
 get '/' do
   @images = KNOW_TYPES.map {|t| Dir.glob("#{IMGFOLDER}/**/*.#{t}") }.flatten.
-    map { |i| "img/#{i.gsub(IMGFOLDER, '')}" }
+    map { |i| "img/#{i.gsub(IMGFOLDER+'/', '')}" }
   haml :index, :format => :html5
 end
 
-get '/img/:i' do
-  filename = "#{IMGFOLDER}/#{params[:i]}"
-  puts "FILENAME #{filename}"
-  send_file(filename)
+get '/img/*' do
+  image = "#{IMGFOLDER}/#{params[:splat]}"
+  send_file(image)
 end

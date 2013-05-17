@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function showImage (index) {
   for (i = 0; i < count; i++) {
-    if (!images[i].className) {
-      images[i].className = 'hidden';
+    var image = images[i];
+    if (!image.className) {
+      image.className = 'hidden';
     }
   }
   images[index].className = '';
