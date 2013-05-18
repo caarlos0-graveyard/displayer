@@ -1,10 +1,10 @@
 # Displayer
-### A damn simple browser image slideshow.
+#### A damn simple browser image slideshow.
 
 ## Purpose
 
 Leave it open in a fullscreen browser showing images with relevant info for your
-employees, team, or anything else.
+employees, team, event, or anything else.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Then it should be running in [http://localhost:4567](http://localhost:4567).
 
 ## Technology
 
-Simple CSS, HAML, JavaScript served with Sinatra.
+Simple CSS, HAML and JavaScript, all served by Sinatra.
 
-> all the code was done in 15 minutes, so, yes, it needs some refactoring.
-> pull-requests are welcome.
+> the first code version was made in less than 15 minutes, so,
+> yes, it needs some refactoring. pull-requests are welcome.
