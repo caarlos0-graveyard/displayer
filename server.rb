@@ -22,6 +22,7 @@ get '/' do
 end
 
 get '/img/*' do
-  image = "#{IMGFOLDER}/#{params[:splat]}"
+  image = "#{IMGFOLDER}/#{params[:splat].first}#{params[:splat][1..-1].join('/')}"
+  puts "IMAGE:::::::::::::::::: #{image}"
   send_file(image)
 end
