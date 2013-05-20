@@ -12,11 +12,30 @@ employees, team, event, or anything else.
 
 ## How to use
 
+### 1. Get it
+
 ```sh
 $ git clone https://github.com/caarlos0/displayer.git
 $ cd displayer
+```
+
+### 2. Run bundler
+
+```sh
 $ bundle
+```
+
+### 3. Run it!
+
+```sh
 $ IMGFOLDER=where/are/your/images ruby server.rb
+```
+
+or
+
+```sh
+$ export IMGFOLDER=where/are/your/images
+$ ruby server.rb
 ```
 
 Then it should be running in [http://localhost:4567](http://localhost:4567).
