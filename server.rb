@@ -27,7 +27,7 @@ get '/' do
   # "/img/*" route.
   @images = KNOW_TYPES.map { |t| Dir.glob("#{IMGFOLDER}/**/*.#{t}") }.flatten.
     map { |i| "img/#{i.gsub(IMGFOLDER+'/', '')}" }
-  
+
   # respond with index.haml in html5
   haml :index, :format => :html5
 end
